@@ -37,8 +37,7 @@ for n_estimators in n_trees:
 
 The results are promising: this model blew past the training accuracy scores attained by the CART classification tree I used a few days ago on this data set.  **The best model has an accuracy of 0.896** (rounded to the nearest thousandth); using 800 estimators, a max depth of 3, and a 0.20 learning rate.
 
-
-| n_estimators  |max_depth  |learning_rate  | accuracy
+<!-- | n_estimators  |max_depth  |learning_rate  | accuracy
 | :---          | :---      | :---          | :---
 | 200           | 3         | 0.20          | 0.890
 | 200           | 3         | 0.25          | 0.890
@@ -48,5 +47,5 @@ The results are promising: this model blew past the training accuracy scores att
 | 800           | 3         | 0.20          | 0.896
 | 800           | 3         | 0.25          | 0.894
 | 1000          | 3         | 0.20          | 0.895
-
+{: .display} -->
 
