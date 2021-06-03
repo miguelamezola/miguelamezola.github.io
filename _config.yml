@@ -37,6 +37,9 @@ show_excerpts: true
 github_username:  miguelamezola
 linkedin_username: miguelamezola
 
+author:
+  name: Miguel Amezola
+  email: dev@miguelamezola.com
 
 # Exclude from processing.
 # The following items will not be processed, by default.
