@@ -6,7 +6,7 @@ tags: classification, python, scikit-learn, AdaBoost, MNIST
 published: true
 ---
 
-Tuning the number of estimators, learning rate, and max depth for the base estimator tree has improved the model.  Now, I need to investigate whether or not that the model is over-fitting the test data.  New submission to the Kaggle competition is in the works.
+Tuning the number of estimators, learning rate, and max depth for the base estimator tree has improved the model.  Now, I need to investigate whether or not that the model is over-fitting the training data.  New submission to the Kaggle competition is in the works.
 
 ![Accuracy results for n_estimators = 5](/assets/estimators_5.png)
 
