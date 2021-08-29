@@ -11,4 +11,5 @@ TimePro is a simple desktop application. In fact, its user interface uses WPF an
 
 - Code repository: [https://dev.azure.com/miguelamezola/TimePro](https://dev.azure.com/miguelamezola/TimePro){:target="_blank"}
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2Vm90hXsyY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include youtube.html id='2Vm90hXsyY4' %}
+
