@@ -6,7 +6,7 @@ tags: python, leetcode, arrays, two_sum
 published: true
 ---
 
-In python, `defaultdict` and `dict` are almost the same except that the former never raises a `KeyError`.  Instead, it provides a default value for the key that does not exist.  In the code below, `seen` is a `defaultdict` that has `list[int]` as a default value.
+In python, `defaultdict` and `dict` are almost the same except that the former never raises a `KeyError`.  Instead, it provides a default value for the key that does not exist.  In the code below, `seen` is a `defaultdict` that has `list[int]` as its default value.
 
 ```python
 from typing import List
