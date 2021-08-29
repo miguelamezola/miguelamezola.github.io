@@ -7,7 +7,7 @@ permalink: /porfolio/
 This page lists my featured projects.
 
 {% for post in site.categories["project"] %}
-  <article>
+  <article class="portfolio-article">
     <h2>
       <a href="{{ post.url }}">
         {{ post.title }}
