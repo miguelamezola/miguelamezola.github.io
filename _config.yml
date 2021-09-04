@@ -19,13 +19,15 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Miguel Amezola
-email: dev@miguelamezola.com
+email: mail@imiguel.net
 description: >- # this means to ignore newlines until "baseurl:"
-  I am an experienced software engineer with a strong background in mathematics 
-  who has a keen interest in machine learning and the R  
-  environment.
+  My experience as a Software Development Engineer includes using programming 
+  languages such as C#, JavaScript, and Python, as well as frameworks like .NET 
+  and React. I have also gained expertise in leading other software engineers 
+  through the software development life cycle, fixing open issues and deploying 
+  new features using distributed computing and microservices.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.imiguel.net" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: minima
@@ -39,7 +41,7 @@ linkedin_username: miguelamezola
 
 author:
   name: Miguel Amezola
-  email: dev@miguelamezola.com
+  email: mail@imiguel.net
 
 # Exclude from processing.
 # The following items will not be processed, by default.
