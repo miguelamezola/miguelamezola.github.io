@@ -8,7 +8,9 @@ My experience as a Software Development Engineer includes using programming lang
 
 ## Experience
 
-### Senior Software Developer, General Atomics Aeronautical Systems, Inc.; Poway, CA, 2017-Present
+### General Atomics Aeronautical Systems, Inc.
+
+Senior Software Developer : Poway, CA : 2017-Present
 
 - Within four years, advanced from entry level to senior and currently support 3-5 other software engineers as their software lead.
 - Through the entire software development life cycle, fixed open issues and deployed new features using a complex, multimillion-line codebase using distributed computing and a microservice architecture.
@@ -23,4 +25,6 @@ My experience as a Software Development Engineer includes using programming lang
 
 ## Education
 
-Pacific Lutheran University, Tacoma, WA  — B.S. Mathematics & B.A. Computer Science, 2017, Cum Laude
+### Pacific Lutheran University
+
+B.S. Mathematics & B.A. Computer Science : 2017, Cum Laude : Tacoma, WA
