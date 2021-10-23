@@ -4,4 +4,5 @@
 
 title: Microblog
 layout: home
+mathjax: true
 ---

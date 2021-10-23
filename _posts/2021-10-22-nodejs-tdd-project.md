@@ -1,11 +1,10 @@
 ---
 layout: post
-title:  "Setting up a Node.js project for TDD"
+title:  "Node.js TDD Project"
 summary: "How to use Mocha.js and chai.js in a Node.js project for Test-Driven Development (TDD)"
 date:   2021-10-22 23:24:00 -0700
 tags: unit testing, test-driven development, JavaScript, Node.js
 published: true
-categories: test-driven-development unit-testing nodejs mocha-chai
 image: /assets/tdd-cycle.jpg
 vertical: Code
 excerpt: "How to use Mocha.js and chai.js in a Node.js project for Test-Driven Development (TDD)"
@@ -78,9 +77,9 @@ After adding the `test` script, we can then run all tests by calling `npm test` 
 const expect = require('chai').expect;
 
 describe('sample', () => {
-	it('fails this test', () => {
-		expect(true).to.equal(false);
-	});
+    it('fails this test', () => {
+        expect(true).to.equal(false);
+    });
 });
 ```
 
