@@ -45,7 +45,7 @@ The `tdd-project` directory should now have a new file called `package.json` whi
   }
 }
 ```
-Now all we have to do is modify the `scripts` property in this file.  We could simply make the `test` script run the `mocha` command.  However, `mocha` by default only finds test files with extensions `.js`, `.mjs`, and `.cjs` in a directory named `test`.  The following script finds all test files ending with `.test.js` in all directories except `node_modules`.
+Now all we have to do is modify the `scripts` property in this file.  We could simply make the `test` script run the `mocha` command.  However, `mocha` by default only finds test files with extensions `.js`, `.mjs`, and `.cjs` in a directory named `test`.  On the other hand, the following script finds all test files ending with `.test.js` in all directories except `node_modules`.
 
 ```json
 {
