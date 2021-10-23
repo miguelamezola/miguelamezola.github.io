@@ -3,10 +3,11 @@ layout: post
 title:  "Checking for Integer Divisibility"
 summary: "How to check for divisibility without using the division operator"
 excerpt: "How to check for divisibility without using the division operator"
-date:   2021-10-23 14:00:00 -0700
+date:   2021-10-23 16:30:00 -0700
 tags: number theory, integers, divisibility
 published: true
 mathjax: true
+image: /assets/divisibility-proof.jpg
 ---
 
 Suppose that we are not allowed to use the division operator in a programming language such as JavaScript.  With this constraint, how can we check whether or not an integer evenly divides another?  Consider the following approach.
