@@ -21,11 +21,13 @@
 title: Miguel Amezola
 email: mail@imiguel.net
 description: >- # this means to ignore newlines until "baseurl:"
-  My experience as a Software Development Engineer includes using programming 
-  languages such as C#, JavaScript, and Python, as well as frameworks like .NET 
-  and React. I have also gained expertise in leading other software engineers 
-  through the software development life cycle, fixing open issues and deploying 
-  new features using distributed computing and microservices.
+  My experience as a Software Development Engineer includes using programming
+  languages such as C#, JavaScript, and Python, as well as frameworks like .NET
+  and React. I have also gained expertise in leading other software engineers
+  through the software development life cycle, fixing open issues, and
+  deploying new features using distributed computing and micro-services. My
+  most advanced database skills are with SQL, but I have working knowledge of
+  MongoDB. I am currently working towards my first AWS certification.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.imiguel.net" # the base hostname & protocol for your site, e.g. http://example.com
 
