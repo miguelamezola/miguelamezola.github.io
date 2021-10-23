@@ -110,4 +110,4 @@ Running `npm test` should now return the following:
 
 
 ```
-Congratulations on writing your first failing test!  You can find the code for this project on my Github, [https://github.com/miguelamezola/tdd-project.git](https://github.com/miguelamezola/tdd-project.git){:target="_blank"}
+Congratulations on writing your first failing test!  I have placed all the code in this post in a Github repository for your convenience: [https://github.com/miguelamezola/tdd-project.git](https://github.com/miguelamezola/tdd-project.git){:target="_blank"}
