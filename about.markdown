@@ -14,12 +14,6 @@ My experience as a Software Development Engineer includes using programming lang
 - Through the entire software development life cycle, fixed open issues and deployed new features using a complex, multimillion-line codebase using distributed computing and a microservice architecture.
 - Designed, implemented, and deployed data-intensive distributed systems used to gather strategic sensor data, such as video and radar images, from multiple military drones at a time, along with other data sources from third-party software integrations, in order to generate and disseminate intelligence products.
 
-## Projects
-
-- Family budget tool created with React: https://github.com/miguelamezola/fambgt
-- Implemented a custom classification tree using the CART algorithm in Python: https://github.com/miguelamezola/titanic
-- Used Python to compare the performance of the Miller-Rabin test with a support vector machine binary classiﬁer from Scikit-Learn: https://github.com/miguelamezola/testing-for-compositeness
-
 ## Skills
 
 - Programming languages: C# (Advanced), JavaScript (Intermediate), Python (Intermediate)
