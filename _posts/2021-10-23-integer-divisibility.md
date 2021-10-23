@@ -7,7 +7,7 @@ date:   2021-10-23 16:30:00 -0700
 tags: number theory, integers, divisibility
 published: true
 mathjax: true
-image: /assets/divisibility-proof.jpg
+image: /assets/divisibility-proof.png
 ---
 
 Suppose that we are not allowed to use the division operator in a programming language such as JavaScript.  With this constraint, how can we check whether or not an integer evenly divides another?  Consider the following approach.
