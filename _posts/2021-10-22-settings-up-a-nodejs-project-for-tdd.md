@@ -5,6 +5,10 @@ summary: "How to use Mocha.js and chai.js in a Node.js project for Test-Driven D
 date:   2021-10-22 23:24:00 -0700
 tags: unit testing, test-driven development, JavaScript, Node.js
 published: true
+categories: test-driven-development unit-testing nodejs mocha-chai
+image: /assets/tdd-cycle.jpg
+vertical: Code
+excerpt: "How to use Mocha.js and chai.js in a Node.js project for Test-Driven Development (TDD)"
 ---
 
 According to [Wikipedia](https://en.wikipedia.org/wiki/Test-driven_development){:target="_blank"}, test-driven development (TDD) is a software development process that converts software requirements into test cases before the software is actually developed.  The steps of the TDD cycle are as follows:
@@ -12,6 +16,8 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Test-driven_development){
 1. Add a test (the new test should fail)
 2. Write the simplest code that makes the new test pass ([YAGNI](https://www.martinfowler.com/bliki/Yagni.html){:target="_blank"})
 3. Refactor the code
+
+![TDD Cycle](/assets/tdd-cycle.jpg)
 
 So, in order to set up a Node.js project for TDD, we need a way to run unit tests on the code that will be developed for it.  There are two popular tools for doing this: [Mocha](https://mochajs.org){:target="_blank"} is a popular JavaScript test framework and [Chai](https://www.chaijs.com){:target="_blank"} is an assertion library that can be nicely paired with it.
 
