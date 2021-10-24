@@ -13,6 +13,7 @@ My experience as a Software Development Engineer includes using programming lang
 - Within four years, advanced from entry level to senior and currently support 3-5 other software engineers as their software lead.  During this time, I have used C#, .NET Framework, .NET Core, and MS SQL Server on a daily basis.
 - Through the entire software development life cycle, fixed open issues and deployed new features using a complex, multimillion-line codebase using distributed computing and a microservice architecture.
 - Designed, implemented, and deployed data-intensive distributed systems used to gather strategic sensor data, such as video and radar images, from multiple military drones at a time, along with other data sources from third-party software integrations, in order to generate and disseminate intelligence products.
+- Regularly prepared questions for technical interviews, conducted phone screens and on-sites, and contributed to hiring decisions for junior to mid-level candidates.
 
 ## Skills
 
