@@ -114,21 +114,21 @@ describe('integerDivision', () => {
 **integerDivision.js**
 ```javascript
 module.exports = (a,b) => {
-    // return NaN if 'a' or 'b' are not numbers
+    // Return NaN if 'a' or 'b' are not numbers
     if (isNaN(a) || isNaN(b))
         return NaN;
 
-    // return Infinity like the JavaScript
+    // Return Infinity like the JavaScript
     // division operator does when 'b' is 0
     if (b == 0)
         return Infinity
 
-    // use this bool to return a negative result
+    // Use this bool to return a negative result
     // when 'a' or 'b' and not both are negative
     let negative = false;
 
-    // if negative, replace 'a' with its absolute
-    // value and toggle the 'negative' bool;
+    // If negative, replace 'a' with its absolute
+    // value and toggle the 'negative' bool, then
     // do the same for 'b'
     if (a < 0) {
         a = a * -1;
@@ -140,7 +140,7 @@ module.exports = (a,b) => {
         negative = !negative;
     }
 
-    // count the number of time that 'b' goes into 'a'
+    // Count the number of time that 'b' goes into 'a'
     let count = 0;
     while (a >= b) {
         a = a - b;
