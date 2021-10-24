@@ -27,60 +27,49 @@ const integerDivisibility = require('./integerDivisibility');
 
 describe('integerDivisibility', () => {
     it('returns true for -14 divides 28', () => {
-	    const expected = true;
+        const expected = true;
         const actual = integerDivisibility(-14, 28);
         expect(expected).to.equal(actual);
     });
-});
 
-describe('integerDivisibility', () => {
     it('returns false for 15 divides 25', () => {
         const expected = false;
         const actual = integerDivisibility(15, 25);
         expect(expected).to.equal(actual);
     });
-});
 
-describe('integerDivisibility', () => {
     it('returns false for 27 divides 9', () => {
         const expected = false;
         const actual = integerDivisibility(27, 9);
         expect(expected).to.equal(actual);
     });
-});
 
-describe('integerDivisibility', () => {
     it('returns true for 13 divides 0', () => {
         const expected = true;
         const actual = integerDivisibility(13, 0);
         expect(expected).to.equal(actual);
     });
-});
 
-describe('integerDivisibility', () => {
     it('returns false for 0 divides 42', () => {
         const expected = false;
         const actual = integerDivisibility(0, 42);
         expect(expected).to.equal(actual);
     });
-});
 
-describe('integerDivisibility', () => {
     it('returns true for 1 divides 8', () => {
         const expected = true;
         const actual = integerDivisibility(1, 8);
         expect(expected).to.equal(actual);
     });
 });
-```
 
-**integerDivisibility.js**
-```javascript
+```
 module.exports = (d, a) => {
     if (d != 0)
         for (let q = -a; q <= a; q++)
-            if (a === q * d)
-                return true;
+        if (a === q * d)
+            return true;
     return false;
 }
+
 ```
