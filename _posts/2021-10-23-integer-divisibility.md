@@ -62,8 +62,10 @@ describe('integerDivisibility', () => {
         expect(expected).to.equal(actual);
     });
 });
-
 ```
+
+**integerDivisibility.js**
+```javascript
 module.exports = (d, a) => {
     if (d != 0)
         for (let q = -a; q <= a; q++)
@@ -71,5 +73,4 @@ module.exports = (d, a) => {
             return true;
     return false;
 }
-
 ```
