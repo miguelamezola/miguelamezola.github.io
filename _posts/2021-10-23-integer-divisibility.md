@@ -78,8 +78,8 @@ describe('integerDivisibility', () => {
 ```javascript
 module.exports = (d, a) => {
     if (d != 0)
-        for (let i = -a; i <= a; i++)
-            if (a === i * d)
+        for (let q = -a; q <= a; q++)
+            if (a === q * d)
                 return true;
     return false;
 }
