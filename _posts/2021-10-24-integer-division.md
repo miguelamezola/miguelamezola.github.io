@@ -10,7 +10,7 @@ mathjax: true
 image: /assets/divisibility-proof.png
 ---
 
-If we are not allowed to use the division operator in a programming language such as JavaScript, how can we perform integer division?  This code uses repeated subtraction to achieve this; its time complexity is Big O of the quotient.  One interesting tidbit: `NaN` is the only value in JavaScript that does not equal itself, so the last unit test had to be adjusted to account for this.
+If we are not allowed to use the division operator in a programming language, how can we perform integer division?  The following code uses repeated subtraction to achieve this; its time complexity is Big O of the quotient.  One interesting tidbit: `NaN` is the only value in JavaScript that does not equal itself, so the last unit test had to be adjusted to account for this.
 
 **integerDivision.test.js**
 ```javascript
@@ -140,17 +140,12 @@ module.exports = (a,b) => {
         negative = !negative;
     }
 
-    // if 'b' is greater than 'a' then skip to the end
-    if (a >= b) {
-        // count the number of time that 'b' goes into 'a'
-        let count = 0;
-        while (a >=  b) {
-            a = a - b;
-            count++
-        }
-        return negative ? -count : count;
+    // count the number of time that 'b' goes into 'a'
+    let count = 0;
+    while (a >= b) {
+        a = a - b;
+        count++
     }
-
-    return negative ? -0 : 0;
+    return negative ? -count : count;
 }
 ```
