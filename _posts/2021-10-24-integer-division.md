@@ -7,7 +7,7 @@ date: 2021-10-24 08:10:00 -0700
 tags: number theory, integers, division
 published: true
 mathjax: true
-image: /assets/divisibility-proof.png
+image: /assets/int-div.png
 ---
 
 If we are not allowed to use the division operator in a programming language, how can we perform integer division?  The following code uses repeated subtraction to achieve this; its time complexity is Big O of the quotient.  One interesting tidbit: `NaN` is the only value in JavaScript that does not equal itself, so the last unit test had to be adjusted to account for this.
