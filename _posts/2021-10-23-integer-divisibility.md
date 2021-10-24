@@ -14,7 +14,7 @@ Suppose that we are not allowed to use the division operator in a programming la
 
 **Definition.**  Let $a$ and $d$ be integers.  We say that $d$ divides $a$ if there exists an integer $q$ such that $a=qd$.
 
-> **Theorem.** Let $a, q, d$ be integers such that $d \neq 0$.  If $a = qd$, then $ \lvert a \rvert \geq \lvert q \rvert$.
+**Proposition.** Let $a, q, d$ be integers such that $d \neq 0$.  If $a = qd$, then $ \lvert a \rvert \geq \lvert q \rvert$.
 
 **Proof.**  Since $ a=qd $ implies that $\lvert a \rvert = \lvert qd \rvert = \lvert q \rvert \cdot \lvert d \rvert \geq \lvert q \rvert $, then $\lvert a \rvert \geq \lvert q \rvert$.  Thus, if $a = qd$, then $\lvert a \rvert \geq \lvert q \rvert$. $\blacksquare$
 
