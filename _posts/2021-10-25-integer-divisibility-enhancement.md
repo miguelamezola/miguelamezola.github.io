@@ -10,7 +10,7 @@ mathjax: true
 image: /assets/divisibility-proof.png
 ---
 
-In a [previous post]({% post_url 2021-10-23-integer-divisibility %}){:target="_blank"}, we proved that if $a = qd$ for integers $a, q, d$ such that $d \neq 0$, then $ \lvert a \rvert \geq \lvert q \rvert$.  So, if we can find an integer $q$ in $[-a, a]$ such that $a = qd$, then we can say that $d$ divides $a$.  The approach we used had a linear time complexity &mdash; some function of $2a$ &mdash; because we naïvely checked each possible $q$ within that range.
+In a [previous post]({% post_url 2021-10-23-integer-divisibility %}){:target="_blank"}, we proved that if $a = qd$ for integers $a, q, d$ such that $d \neq 0$, then $ \lvert a \rvert \geq \lvert q \rvert$.  So, if we can find an integer $q$ in $[-a, a]$ such that $a = qd$, then we can say that $d$ divides $a$.  The approach we used had a linear time complexity &mdash; some function of $2a + 1$ &mdash; because we naïvely checked each possible $q$ within that range.
 
 However, we can find $q$ much faster by using binary search.  The following solution has a time complexity of $\mathcal{O}(\ln a)$.  It passes all the same test cases as our previous approach. Note that we are still not using the division operator here; in order to find `mid`, we use bit shifting.
 
