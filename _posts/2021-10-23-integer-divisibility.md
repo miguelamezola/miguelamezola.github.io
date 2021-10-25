@@ -86,8 +86,12 @@ describe('divides', () => {
 ```javascript
 module.exports = (d, a) => {
     if (d != 0) {
-        const start = a > 0 ? -a : a;
-        const end = a > 0 ? a : -a;
+        let start = -a;
+        let end = a;
+        if (a < 0) {
+            start = a;
+            end = -a;
+        }
         for (let q = start; q <= end; q++)
             if (a === q * d)
                 return true;
