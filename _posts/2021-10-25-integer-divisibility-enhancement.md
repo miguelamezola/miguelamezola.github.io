@@ -1,24 +1,18 @@
 ---
 layout: post
-title:  "Checking for Integer Divisibility"
-summary: "How to check for divisibility without using the division operator or the remainder operator"
-excerpt: "How to check for divisibility without using the division operator or the remainder operator"
-date:   2021-10-23 16:30:00 -0700
+title:  "Checking for Integer Divisibility Using Binary Search"
+summary: "Binary search speeds up our check for divisibility without using the division operator or the remainder operator"
+excerpt: "Binary search speeds up our check for divisibility without using the division operator or the remainder operator"
+date:   2021-10-25 06:45:00 -0700
 tags: number theory, integers, divisibility
 published: true
 mathjax: true
 image: /assets/divisibility-proof.png
 ---
 
-Suppose that we are not allowed to use the division operator or remainder operator in a programming language such as JavaScript.  With this constraint, how can we check whether or not an integer evenly divides another?  Consider the following approach.
+[In a previous post]({% post_url 2021-10-23-integer-divisibility %}), we proved that if $a = qd$ for integers $a, q, d$ such that $d \neq 0$, then $ \lvert a \rvert \geq \lvert q \rvert$.  So, if we can find an integer $q$ between $-a$ and $a$ such that $a = qd$, then we can say that $d$ divides $a$.  The approach we used had a linear time complexity, some function of $a$, because we naïvely checked each possible $q$ within that range.
 
-**Definition.**  Let $a$ and $d$ be integers.  We say that $d$ divides $a$ if there exists an integer $q$ such that $a=qd$.
-
-**Proposition.** Let $a, q, d$ be integers such that $d \neq 0$.  If $a = qd$, then $ \lvert a \rvert \geq \lvert q \rvert$.
-
-**Proof.**  Since $ a=qd $ implies that $\lvert a \rvert = \lvert qd \rvert = \lvert q \rvert \cdot \lvert d \rvert \geq \lvert q \rvert $, then $\lvert a \rvert \geq \lvert q \rvert$.  Thus, if $a = qd$, then $\lvert a \rvert \geq \lvert q \rvert$. $\blacksquare$
-
-So, in order to check whether $d$ divides $a$, a computer program would just have to search for an integer $q$ between $-a$ and $a$ (inclusive) such that $a = qd$.  The following approach has linear time complexity, a function of $a$; I would describe it as being naïve or brute force.
+However, we can find $q$ much faster by using binary search.  The following solution has a time complexity of $\mathcal{O}(\ln a)$.  It passes all the same test cases as our previous approach. Note that we are still not using the division operator here; in order to find `mid`, we use bit shifting.
 
 **divides.test.js**
 ```javascript
@@ -135,15 +129,51 @@ module.exports = (d, a) => {
     }
 
     if (Math.abs(d) <= Math.abs(a)) {
-        let start = -a;
-        let end = a;
+        // carefully choosing our left and right indices cuts our
+        // search range in half from [-a, a] to [-a, 0) or (0, a]
+        let left;
+        let right;
+
         if (a < 0) {
-            start = a;
-            end = -a;
+            if (d < 0) {
+                left = 1;
+                right = -a;
+            } else {
+                left = a;
+                right = -1;
+            }
+        } else {
+            if (d < 0) {
+                left = -a;
+                right = -1;
+            } else {
+                left = 1;
+                right = a;
+            }
         }
-        for (let q = start; q <= end; q++)
-            if (a === q * d)
+
+        // binary search
+        while (left + 1 < right) {
+            const mid = (left + right) >> 1;
+            const prod = mid * d;
+            if (a == prod) {
                 return true;
+            }
+
+            if (d < 0) {
+                if (a < prod) {
+                    left = mid;
+                } else {
+                    right = mid;
+                }
+            } else {
+                if (a < prod) {
+                    right = mid;
+                } else {
+                    left = mid;
+                }
+            }
+        }
     }
     return false;
 }
