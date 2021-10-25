@@ -20,57 +20,78 @@ Suppose that we are not allowed to use the division operator or remainder operat
 
 So, in order to check whether $d$ divides $a$, a computer program would just have to search for an integer $q$ between $-a$ and $a$ (inclusive) such that $a = qd$.  The following approach has linear time complexity; I would describe it as being naïve or brute force.
 
-**integerDivisibility.test.js**
+**divides.test.js**
 ```javascript
 const expect = require('chai').expect;
-const integerDivisibility = require('./integerDivisibility');
+const divides = require('./divides');
 
-describe('integerDivisibility', () => {
+describe('divides', () => {
+    it('returns false for 0 divides 0', () => {
+        const expected = false;
+        const actual = divides(0, 0);
+        expect(expected).to.equal(actual);
+    });
+
     it('returns true for -14 divides 28', () => {
         const expected = true;
-        const actual = integerDivisibility(-14, 28);
+        const actual = divides(-14, 28);
+        expect(expected).to.equal(actual);
+    });
+
+    it('returns true for -14 divides 13', () => {
+        const expected = false;
+        const actual = divides(-14, 13);
+        expect(expected).to.equal(actual);
+    });
+
+    it('returns true for 9 divides -18', () => {
+        const expected = true;
+        const actual = divides(9, -18);
         expect(expected).to.equal(actual);
     });
 
     it('returns false for 15 divides 25', () => {
         const expected = false;
-        const actual = integerDivisibility(15, 25);
+        const actual = divides(15, 25);
         expect(expected).to.equal(actual);
     });
 
     it('returns false for 27 divides 9', () => {
         const expected = false;
-        const actual = integerDivisibility(27, 9);
+        const actual = divides(27, 9);
         expect(expected).to.equal(actual);
     });
 
     it('returns true for 13 divides 0', () => {
         const expected = true;
-        const actual = integerDivisibility(13, 0);
+        const actual = divides(13, 0);
         expect(expected).to.equal(actual);
     });
 
     it('returns false for 0 divides 42', () => {
         const expected = false;
-        const actual = integerDivisibility(0, 42);
+        const actual = divides(0, 42);
         expect(expected).to.equal(actual);
     });
 
     it('returns true for 1 divides 8', () => {
         const expected = true;
-        const actual = integerDivisibility(1, 8);
+        const actual = divides(1, 8);
         expect(expected).to.equal(actual);
     });
 });
 ```
 
-**integerDivisibility.js**
+**divides.js**
 ```javascript
 module.exports = (d, a) => {
-    if (d != 0)
-        for (let q = -a; q <= a; q++)
+    if (d != 0) {
+        const start = a > 0 ? -a : a;
+        const end = a > 0 ? a : -a;
+        for (let q = start; q <= end; q++)
             if (a === q * d)
                 return true;
+    }
     return false;
 }
 ```
