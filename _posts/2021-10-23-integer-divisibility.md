@@ -20,7 +20,7 @@ Suppose that we are not allowed to use the division operator or remainder operat
 
 So, in order to check whether $d$ divides $a$, a computer program would just have to search for an integer $q$ between $-a$ and $a$ (inclusive) such that $a = qd$.  The following approach has linear time complexity, a function of $a$; I would describe it as being naïve or brute force.
 
-If we are concerned with numeric overflow, then we should constrain $a$ and $d$ to have an absolute value no greater than $46340$, which is between $2^{15}$ and $2^{16}$.
+Some thought should be given to numeric overflow when $q$ and $d$ are large numbers.
 
 **divides.test.js**
 ```javascript
