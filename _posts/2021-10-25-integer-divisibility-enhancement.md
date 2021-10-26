@@ -14,6 +14,8 @@ In a [previous post]({% post_url 2021-10-23-integer-divisibility %}){:target="_b
 
 However, we can find $q$ much faster by using binary search.  The following solution has a time complexity of $\mathcal{O}(\log a)$.  It passes all the same test cases as our previous approach. Note that we are still not using the division operator here; in order to find `mid`, we use bit shifting.
 
+If we are concerned with numeric overflow, then we should constrain $a$ and $d$ to have an absolute value no greater than $46340$, which is between $2^{15}$ and $2^{16}$.
+
 **divides.test.js**
 ```javascript
 const expect = require('chai').expect;
