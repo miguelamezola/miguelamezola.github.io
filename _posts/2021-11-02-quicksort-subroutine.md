@@ -3,7 +3,7 @@ layout: post
 title:  "An important subroutine used by quicksort"
 summary: "Quicksort is an in-place sorting algorithm that uses an important subroutine for partitioning"
 excerpt: "Quicksort is an in-place sorting algorithm that uses an important subroutine for partitioning"
-date:   2021-11-03 01:30:00 -0700
+date:   2021-11-02 06:00:00 -0700
 tags: algorithm, sorting
 published: true
 mathjax: true
@@ -52,5 +52,5 @@ const exchange = (arr, i, j) => {
 }
 ```
 
-After the **division** comes the **conquest**.  So, the sub-arrays `arr[p..q-1]` and `arr[q+1..r]` are then sorted by recursive calls to quicksort.  Since everything was done in place, the entire array `arr[p..r]` is sorted after these recursive calls and no additional work is needed to combine all the solutions to the sub-problems to create a solution to the original problem.
+After the division comes the conquest.  So, the sub-arrays `arr[p..q-1]` and `arr[q+1..r]` are then sorted by recursive calls to quicksort.  Since everything was done in place, the entire array `arr[p..r]` is sorted after these recursive calls and no additional work is needed to combine all the solutions to the sub-problems.
 
