@@ -3,7 +3,7 @@ layout: post
 title:  "An important subroutine used by quicksort"
 summary: "Quicksort is an in-place sorting algorithm that uses an important subroutine for partitioning"
 excerpt: "Quicksort is an in-place sorting algorithm that uses an important subroutine for partitioning"
-date:   2021-11-02 06:00:00 -0700
+date:   2021-11-03 01:30:00 -0700
 tags: algorithm, sorting
 published: true
 mathjax: true
