@@ -54,7 +54,10 @@ const exchange = (arr, i, j) => {
 }
 ```
 
-Now, we will walk through what the subroutine does for the unit test above.  Notice that inside the loop, the values located at `i` and `j` are only exchanged if `arr[j]` is less than or equal to `arr[r]`, as is the case when `j = 0` and `j = 3` in this example.  After the loop, the values located at `q`, which is set to `i + 1`, and `r` are exchanged.
+Now, we will walk through what the subroutine does for the unit test above.  Notice that
+* `p` is used to set the initial values of `i` and `j`,
+* inside the loop, the values located at `i` and `j` are only exchanged if `arr[j]` is less than or equal to `arr[r]`, as is the case when `j = 0` and `j = 3` in this example, and,
+* after the loop, the values located at `q`, which is set to `i + 1`, and `r` are exchanged.
 
 {::nomarkdown}
 <?xml version="1.0" encoding="UTF-8"?>
