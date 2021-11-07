@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Walking through the quicksort subroutine"
-summary: "Quicksort is an in-place sorting algorithm that uses an important subroutine for partitioning"
-excerpt: "Quicksort is an in-place sorting algorithm that uses an important subroutine for partitioning"
+summary: "In this post, we walk through a small example that clarifies how the 'partition' subroutine used by quicksort rearranges the elements in an array."
+excerpt: "In this post, we walk through a small example that clarifies how the 'partition' subroutine used by quicksort rearranges the elements in an array."
 date:   2021-11-06 12:30:00 -0700
 tags: algorithm, sorting
 published: true
