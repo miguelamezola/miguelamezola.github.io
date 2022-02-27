@@ -7,7 +7,7 @@ date: 2022-02-27 07:00:00 -0700
 tags: mysql
 published: true
 mathjax: true
-image: /assets/kleppmann.png
+image: /assets/kleppmann.jpg
 ---
 
 For backend/full-stack software engineers and system design interviews, I highly recommend ["Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems"](https://amzn.to/3IulnU3) by Dr. Martin Kleppmann.
