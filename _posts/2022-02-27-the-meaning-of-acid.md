@@ -12,7 +12,7 @@ image: /assets/kleppmann.jpg
 
 For backend/full-stack software engineers and system design interviews, I highly recommend ["Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems"](https://amzn.to/3IulnU3) by Dr. Martin Kleppmann.
 
-[![Kleppmann Book Cover](/assets/kleppmann.jpg)](https://amzn.to/3IulnU3) I want to share how this book explains ACID consistency.  ACID is a set of properties intended to guarantee data validity after any transaction, which can sometimes be composed of multiple database operations.  A transaction satisfies the ACID properties if it
+[![Kleppmann Book Cover](/assets/kleppmann.jpg){: style="margin-bottom: 1em;"}](https://amzn.to/3IulnU3) I want to share how this book explains ACID consistency.  ACID is a set of properties intended to guarantee data validity after any transaction, which can sometimes be composed of multiple database operations.  A transaction satisfies the ACID properties if it
 
 - completely fails, returning the database to its original state by discarding all writes, when any of its statements fail to complete (atomicity),
 - transitions the database from one valid state to another (consistency),
