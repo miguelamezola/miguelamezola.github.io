@@ -21,5 +21,5 @@ For backend/full-stack software engineers and system design interviews, I highly
 
 In my experience, when ACID consistency is explained, the focus is usually on defining integrity constraints in order to prevent database corruption (please see [https://en.wikipedia.org/wiki/ACID](https://en.wikipedia.org/wiki/ACID)).
 
-However, an application's notion of consistency may require enforcing constraints that the database cannot.  Therefore, the application is actually the responsible one for preserving consistency by defining its transactions correctly.  For this reason, Dr. Kleppmann concludes that consistency is actually a property of the application unlike atomicity, isolation, and durability and that "the letter C doesn't really belong in ACID", see page 225.
+However, an application's notion of consistency may require enforcing constraints that the database cannot.  So, at the end of the day, it is actually the application that is responsible for preserving consistency by defining its transactions correctly.  For this reason, Dr. Kleppmann concludes that consistency is actually a property of the application unlike atomicity, isolation, and durability and that "the letter C doesn't really belong in ACID", see page 225.
 
