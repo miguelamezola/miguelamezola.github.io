@@ -14,10 +14,10 @@ For backend/full-stack software engineers and system design interviews, I highly
 
 [![Kleppmann Book Cover](/assets/kleppmann.jpg){: style="margin-bottom: 1em;"}](https://amzn.to/3IulnU3) I want to share how this book explains ACID consistency.  ACID is a set of properties intended to guarantee data validity after any transaction, which can sometimes be composed of multiple database operations.  A transaction satisfies the ACID properties if it
 
-- completely fails, returning the database to its original state by discarding all writes, when any of its statements fail to complete (atomicity),
-- transitions the database from one valid state to another (consistency),
-- does not conflict with concurrent execution of other transactions (isolation), and
-- remains committed regardless of hardware faults, database crashes, etc. (durability).
+- completely fails, returning the database to its original state by discarding all writes, when any of its statements fail to complete (**atomicity**),
+- transitions the database from one valid state to another (**consistency**),
+- does not conflict with concurrent execution of other transactions (**isolation**), and
+- remains committed regardless of hardware faults, database crashes, etc. (**durability**).
 
 In my experience, when ACID consistency is explained, the focus is usually on defining integrity constraints in order to prevent database corruption (please see [https://en.wikipedia.org/wiki/ACID](https://en.wikipedia.org/wiki/ACID){: target=":blank"}).
 
