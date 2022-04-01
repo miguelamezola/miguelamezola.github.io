@@ -2,7 +2,7 @@
 layout: page
 title: Catálogo
 permalink: /catalogo/
-image: /assets/catalogo.jpg
+image: /assets/catalogo.png
 ---
 
 Una lista de términos comúnmente usados por ingenieros de software.
