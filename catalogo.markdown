@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Catálogo
-permalink: /catálogo/
-image: /assets/catálogo.jpg
+permalink: /catalogo/
+image: /assets/catalogo.jpg
 ---
 
 Una lista de términos comúnmente usados por ingenieros de software.
