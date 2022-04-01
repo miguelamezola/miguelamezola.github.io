@@ -5,7 +5,12 @@ permalink: /catalogo/
 image: /assets/catalogo.png
 ---
 
-Una lista de términos comúnmente usados por ingenieros de software.
+A continuación encontrará una lista de términos comúnmente usados por ingenieros de software.
+
+Esta página no está completa, aún necesito implementar dos funciones (además de agregar más términos):
+
+1. la capacidad de ordenar las columnas alfanuméricamente y
+2. la capacidad de encontrar términos en la lista usando una barra de búsqueda.
 
 |English                    |Español                                |
 |---------------------------|---------------------------------------|
@@ -27,14 +32,14 @@ Una lista de términos comúnmente usados por ingenieros de software.
 |bundle                     |empaquetar                             |
 |computational complexity   |complejidad computacional              |
 |recursion                  |recursividad                           |
-|bitwise                    |a nivel de bits                        |
+|bitwise operation          |operación a nivel de bits              |
 |data structure             |estructura de datos                    |
 |algorithm                  |algoritmo                              |
 |sorting                    |ordenación                             |
 |bubble sort                |ordenación por método de la burbuja    |
 |selection sort             |ordenación por selección               |
 |heap sort                  |ordenación por montículos              |
-|merge sort                 |ordenación port mezcla                 |
+|merge sort                 |ordenación por mezcla                  |
 |linear time                |tiempo lineal                          |
 |divide and conquer         |divide y vencerás                      |
 |graph                      |grafo                                  |
